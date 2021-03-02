@@ -16,8 +16,8 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 - [Habilidades](#habilidades)
 - [Entregáveis](#entregáveis)
   - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
-  - [Data de Entrega](#data-de-entrega)
 - [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
+  - [Data de Entrega](#data-de-entrega)
   - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
   - [Durante o desenvolvimento](#durante-o-desenvolvimento)
 - [Como desenvolver](#como-desenvolver)
@@ -70,6 +70,12 @@ Você pode adicionar outros arquivos se julgar necessário.
 ---
 
 ## O que deverá ser desenvolvido
+
+- Será desenvolvida uma aplicação utilizando JavaScript, HTML5 e CSS3.
+
+### Desenvolvimento
+
+- Você irá desenvolver um site que gere cartas misteriosas.
 
 ## Data de Entrega
 
@@ -136,6 +142,7 @@ Você pode adicionar outros arquivos se julgar necessário.
   5. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
 
 ---
+### Como desenvolver
 
 ## Linter
 
@@ -143,7 +150,7 @@ Para garantir a qualidade do código, vamos utilizar neste projeto o linter `ESL
 Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível
 e de fácil manutenção! Para rodá-lo localmente no projeto, execute os comandos abaixo:
 
-  ```bash
+```bash
 npm run lint
 ```
 
@@ -206,38 +213,38 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 **O que será verificado:**
 
-- Será validado que existe um elemenento input com `id=carta-texto`
+- Será validado que existe um elemento `input` com `id=carta-texto`
 
 ### 2 - Deve haver um parágrafo com o id=\"carta-gerada\" onde o usuário verá o resultado de sua carta misteriosa
 
 **O que será verificado:**
 
-- Será validado que existe um elemento p com o `id="carta-gerada"`
+- Será validado que existe um elemento `p` com o `id="carta-gerada"`
 
 ### 3 - Deve haver um botão com id=\"criar-carta\" e ao clicar nesse botão, a carta misteriosa deve ser gerada
 
   Pontos importantes:
 
     * Cada palavra deve aparecer dentro de uma tag `span`.
-    * As tags `span` devem ser adicionadas como filha do parágrafo que possui o id `carta-gerada`.
+    * As tags `span` devem ser adicionadas como filhas do parágrafo que possui o id `carta-gerada`.
 
 **O que será verificado:**
 
-- Será validado que existe um elemento button com `id="criar-carta"`
+- Será validado que existe um elemento `button` com `id="criar-carta"`
 
 - Será validado que ao clicar no botão, a carta misteriosa deve ser gerada
 
-### 4 - Ao criar uma carta através do botão id=\"criar-carta\", o `input` com id=\"carta-texto\" deve permanecer com o texto digitado
+### 4 - Ao criar uma carta através do botão com id="criar-carta", o `input` com id="carta-texto" deve permanecer com o texto digitado
 
 **O que será verificado:**
 
-- Será validado que ao criar uma carta através do botão `id="criar-carta"`
+- Será validado que ao criar uma carta através do botão `id="criar-carta"` o input` com id=\"carta-texto\" permanece com o texto digitado
 
 ### 5 - Se o usuário não preencher o campo ou preencher com apenas espaços vazios adicionar a mensagem 'Por favor, digite o conteúdo da carta.'
 
 **O que será verificado:**
 
-- Será validado que irá exibir a mensagem "Por favor, digite o conteúdo da carta." no elemento p com o `id="carta-gerada"
+- Será validado que irá exibir a mensagem "Por favor, digite o conteúdo da carta." no elemento `p` com o `id="carta-gerada"
 
 ### 6 - Crie a classe `newspaper`
 
@@ -250,11 +257,11 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 **O que será verificado:**
 
-- Será validado que deve possuir a propriedade `backgroud-color` igual a rgb(250, 235, 215)
+- Será validado se a classe `newspaper` possui a propriedade `background-color` igual a rgb(250, 235, 215)
 
-- Será validado que deve possuir a propriedade `font-family` igual a "Times New Roman"
+- Será validado se a classe `newspaper` possui `font-family` igual a "Times New Roman"
 
-- Será validado que deve possuir a propriedade `font-weight` igual a 700
+- Será validado se a classe `newspaper` possui a propriedade `font-weight` igual a 700
 
 ### 7 - Crie a classe `magazine1`.
 
@@ -269,15 +276,15 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 **O que será verificado:**
 
-- Será validado que deve possuir a propriedade `background-color` igual a rgb(0, 128, 128)`
+- Será validado se a classe `magazine1` possui a propriedade `background-color` igual a rgb(0, 128, 128)`
 
-- Será validado que deve possuir a propriedade `color` igual a rgb(255, 255, 255)`
+- Será validado se a classe `magazine1` possui  a propriedade `color` igual a rgb(255, 255, 255)`
 
-- Será validado que deve possuir a propriedade `font-family` igual a "Verdana"
+- Será validado se a classe `magazine1` possui propriedade `font-family` igual a "Verdana"
 
-- Será validado que deve possuir a propriedade `font-weight` igual a "900"
+-  Será validado se a classe `magazine1` possui a propriedade `font-weight` igual a "900"
 
-- Será validado que deve possuir a propriedade `text-transform` igual a "uppercase"`
+- Será validado se a classe `magazine1` possui a propriedade `text-transform` igual a "uppercase"`
 
 ### 8 - Crie a classe `magazine2`.
 
@@ -291,13 +298,13 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 **O que será verificado:**
 
-- Será validado que deve possuir a propriedade `background-image` igual a "images/pink-pattern.png"
+- Será validado se a classe `magazine2` possui a propriedade `background-image` igual a "images/pink-pattern.png"
 
-- Será validado que deve possuir a propriedade `color` igual a rgb(255, 0, 255)
+- Será validado se a classe `magazine2` possui a propriedade `color` igual a rgb(255, 0, 255)
 
-- Será validado que deve possuir a propriedade `font-family` igual a "Verdana"
+- Será validado se a classe `magazine2` possui a propriedade `font-family` igual a "Verdana"
 
-- Será validado que deve possuir a propriedade `font-weight` igual a "900"
+- Será validado se a classe `magazine2` possui a propriedade `font-weight` igual a "900"
 
 ### 9 - Crie a classe `medium`.
 
@@ -309,9 +316,10 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 **O que será verificado:**
 
-- Será validado que deve possuir a propriedade `font-size` igual a "20px"
+- Será validado se a classe `medium` possui a propriedade `font-size` igual a "20px"
 
-- Será validado que deve possuir a propriedade `padding` igual a "8px"
+- Será validado se a classe `medium` possui a propriedade `padding` igual a "8px"
+
 
 ### 10 - Crie a classe `big`.
 
@@ -323,9 +331,9 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 **O que será verificado:**
 
-- Será validado que deve possuir a propriedade `font-size` igual a "30px"
+- Será validado se a classe `big` possui a propriedade `font-size` igual a "30px"
 
-- Será validado que deve possuir a propriedade `padding` igual a "10px"
+- Será validado se a classe `big` possui a propriedade `padding` igual a "10px"
 
 ### 11 - Crie a classe `reallybig`.
 
@@ -337,9 +345,9 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 **O que será verificado:**
 
-- Será validado que deve possuir a propriedade `font-size` igual a "40px"
+- Será validado se a classe `reallybig` possui a propriedade `font-size` igual a "40px"
 
-- Será validado que deve possuir a propriedade `padding` igual a "15px"
+- Será validado se a classe `reallybig` possui a propriedade `padding` igual a "15px"
 
 ### 12 - Crie a classe `rotateleft`.
 
@@ -350,7 +358,7 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 **O que será verificado:**
 
-- Será validado que deve possuir a propriedade `transform` igual a "matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0)"
+- Será validado se a classe `rotateleft` possui a propriedade `transform` igual a "matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0)"
 
 ### 13 - Crie a classe `rotateright`.
 
@@ -361,7 +369,7 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 **O que será verificado:**
 
-- Será validado que deve possuir a propriedade `transform` igual a "matrix(0.996195, 0.0871557, -0.0871557, 0.996195, 0, 0)"
+- Será validado se a classe `rotateright` possui a propriedade `transform` igual a "matrix(0.996195, 0.0871557, -0.0871557, 0.996195, 0, 0)"
 
 ### 14 - Crie a classe `skewleft`.
 
@@ -372,7 +380,7 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 **O que será verificado:**
 
-- Será validado que deve possuir a propriedade `transform` igual a "matrix(1, 0, 0.176327, 1, 0, 0)"
+- Será validado se a classe `skewleft` possui a propriedade `transform` igual a "matrix(1, 0, 0.176327, 1, 0, 0)"
 
 ### 15 - Crie a classe `skewright`.
 
@@ -383,7 +391,7 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 **O que será verificado:**
 
-- Será validado que deve possuir a propriedade `transform` igual a "matrix(1, 0, -0.176327, 1, 0, 0)"
+- erá validado se a classe `skewright` possui a propriedade `transform` igual a "matrix(1, 0, -0.176327, 1, 0, 0)"
 
 ### 16 - Adicione as classes de forma aleatória a fim de estilizar as palavras.
 
@@ -402,11 +410,11 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 **O que será verificado:**
 
-- Será validado que ao criar uma carta deve possuir uma lista de classes aleatórias
+- Será validado se ao criar uma carta ela recebe uma lista de classes aleatórias
 
-- Será validado que ao criar uma segunda carta deve possuir uma lista de classes aleatórias
+- Será validado se ao criar uma segunda carta ela recebe uma lista de classes aleatórias
 
-- Será validado que as classes das duas cartas não podem ser exatamente iguais
+- Será validado se as classes das duas cartas não são exatamente iguais
 
 ## Requisitos Bônus:
 
@@ -419,9 +427,9 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 **O que será verificado:**
 
-- Será validado que ao clicar em uma carta deve gerar uma nova lista aleatória de classes
+- Será validado se ao clicar em uma carta uma nova lista aleatória de classes é gerada
 
-- Será validado que ao clicar novamente na mesma carta deve gerar uma nova lista aleatória de classes diferente da lista anterior
+- Será validado se ao clicar novamente na mesma carta uma nova lista aleatória de classes é gerada e se a nova lista é diferente da lista anterior
 
 ### 18 - Deve haver um parágrafo com o id=\"carta-contador\" onde existirá um contador de palavras
 
@@ -431,9 +439,9 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
   
 **O que será verificado:**
 
-- Será validado que existe um elemento p com o `id="carta-contador"`
+- Será validado que existe um elemento `p` com o `id="carta-contador"`
 
-- Será validado que ao criar uma carta deve atualizar o p com o `id="carta-contador" com o número de palavras da carta (valor numérico).
+- Será validado se ao criar uma carta o elemento `p` com o `id="carta-contador"  é atualizado com o número de palavras da carta (valor numérico).
 
 ---
 
@@ -453,14 +461,14 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 ## Depois de terminar o desenvolvimento
 
-Para **"entregar"** seu projeto, siga os passos a seguir:
+Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
 
 * Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
   * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
   * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
   * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-0x`
 
-Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
+Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
 ⚠ Lembre-se que garantir que todas as _issues_ comentadas pelo **Lint** estão resolvidas! ⚠
 
@@ -470,7 +478,7 @@ Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um vid
 
 À medida que você e as outras pessoas que estudam na Trybe forem entregando os projetos, vocês receberão um alerta via Slack para também fazer a revisão dos Pull Requests dos seus colegas. Fiquem atentos às mensagens do "Pull Reminders" no Slack!
 
-Use o material que você já viu sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os projetos que chegaram para você.
+Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
 
 # Avisos Finais
 
